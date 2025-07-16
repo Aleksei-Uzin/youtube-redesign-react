@@ -2,14 +2,14 @@
   font-family: 'Mulish';
   font-weight: 400;
   font-display: swap;
-  src: local('Mulish Regular'), url('/fonts/Mulish-Regular.ttf') format('ttf');
+  src: local('Mulish Regular'), url('./fonts/Mulish-Regular.ttf') format('ttf');
 }
 
 @font-face {
   font-family: 'Mulish';
   font-weight: 700;
   font-display: swap;
-  src: local('Mulish Bold'), url('/fonts/Mulish-Bold.ttf') format('ttf');
+  src: local('Mulish Bold'), url('./fonts/Mulish-Bold.ttf') format('ttf');
 }
 
 *,
