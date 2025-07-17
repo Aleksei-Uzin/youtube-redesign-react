@@ -18,6 +18,7 @@ import Music from './svgs/music.svg?react'
 import Search from './svgs/search.svg?react'
 import Star from './svgs/star.svg?react'
 import Torch from './svgs/torch.svg?react'
+import YouTubeLogo from './svgs/youtube-logo.svg?react'
 
 export const IconArrowDown = ArrowDown
 export const IconArrowLeft = ArrowLeft
@@ -39,3 +40,4 @@ export const IconMusic = Music
 export const IconSearch = Search
 export const IconStar = Star
 export const IconTorch = Torch
+export const IconYouTubeLogo = YouTubeLogo
