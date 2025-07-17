@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px 20px 32px;
+  transition: padding 400ms ease-out;
+}
+
+.header__youtube-buttons {
+  display: flex;
+  gap: 60px;
+  width: 58%;
+}
+
+.header__nav-box {
+  display: flex;
+  gap: 28px;
+}
+
+@media (max-width: 660px) {
+  .header {
+    padding: 12px 20px 12px 16px;
+  }
+
+  .header__youtube-buttons {
+    justify-content: space-between;
+    width: 89%;
+  }
+}
