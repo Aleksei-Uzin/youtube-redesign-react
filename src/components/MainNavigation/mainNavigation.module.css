@@ -1,0 +1,34 @@
+.main-navigation-box {
+  padding: 31px 33px 14px 33px;
+}
+
+.main-navigation-box__item {
+  padding-bottom: 30px;
+}
+
+.main-navigation-box__item_large-pb {
+  padding-bottom: 60px;
+}
+
+.main-navigation-box__btn {
+  font-size: 16px;
+}
+
+.main-navigation-box__btn:hover {
+  color: var(--alert);
+}
+
+.subscriptions-box {
+  padding-top: 27px;
+  padding-bottom: 52px;
+}
+
+.subscriptions-header {
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+.subscriptions-box .main-navigation-box__item {
+  margin-left: -4px;
+  padding-bottom: 23px;
+}
