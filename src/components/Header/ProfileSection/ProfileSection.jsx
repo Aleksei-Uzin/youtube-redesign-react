@@ -1,4 +1,5 @@
 import { createElement, useEffect, useState } from 'react'
+import { Menu } from '../../Menu'
 import { Button } from '../../Button'
 import { CONTENT } from './content'
 import { useMedia } from '../../../hooks/useMedia'
@@ -20,13 +21,13 @@ export const ProfileSection = () => {
   const listItems = CONTENT.map(({ id, icon, notifications = [] }, ind) => {
     const len = notifications.length
     return (
-      <li
-        key={id}
+      <Menu.Item
         className={styles['profile-item']}
         data-visible={visibility[ind]}
+        key={id}
       >
         <Button>
-          {typeof icon === 'string' ? (
+          {!icon ? (
             <img
               src={Avatar}
               alt="Profile photo"
@@ -41,9 +42,9 @@ export const ProfileSection = () => {
         {len ? (
           <span className={styles['profile-item__span']}>{len}</span>
         ) : null}
-      </li>
+      </Menu.Item>
     )
   })
 
-  return <ul className={styles['profile-buttons']}>{listItems}</ul>
+  return <Menu menuClassName={styles['profile-buttons']}>{listItems}</Menu>
 }

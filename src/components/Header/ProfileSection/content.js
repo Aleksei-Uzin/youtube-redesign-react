@@ -24,7 +24,7 @@ export const CONTENT = [
   },
   {
     id: 'profile-avatar',
-    icon: './assets/profile-photo.png',
+    icon: null,
     visible: true,
   },
   {
