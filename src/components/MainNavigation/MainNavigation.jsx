@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import classNames from 'classnames'
 import { Menu } from '../Menu'
 import { NavItems } from './NavItems'
 import { useHeaderMenuButton } from '../HeaderMenuButton'
@@ -6,14 +6,15 @@ import styles from './mainNavigation.module.css'
 
 export const MainNavigation = () => {
   const [state] = useHeaderMenuButton()
-
-  useEffect(() => {
-    console.log(state)
-  }, [state])
+  const finalClassNames = classNames({
+    [styles['main-navigation-box_hidden']]: state,
+  })
 
   return (
-    <Menu boxClassName={styles['main-navigation-box']}>
-      <NavItems />
-    </Menu>
+    <nav>
+      <Menu boxClassName={finalClassNames}>
+        <NavItems />
+      </Menu>
+    </nav>
   )
 }

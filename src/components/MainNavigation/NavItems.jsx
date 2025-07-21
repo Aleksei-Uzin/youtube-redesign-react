@@ -16,7 +16,12 @@ export const NavItems = () => {
     let element = null
 
     if (isLastItem) {
-      element = <SubscriptionsMenu />
+      element = (
+        <SubscriptionsMenu
+          buttonClassName={styles['main-navigation-box__btn']}
+          itemClassName={styles['main-navigation-box__item']}
+        />
+      )
       id = 'nested-elements'
       i--
     } else {
@@ -28,7 +33,8 @@ export const NavItems = () => {
       )
     }
 
-    const finalClassNames = classNames(styles['main-navigation-box__item'], {
+    const finalClassNames = classNames({
+      [styles['main-navigation-box__item']]: i + 1 !== len,
       [styles['main-navigation-box__item_large-pb']]: i === 2,
     })
 

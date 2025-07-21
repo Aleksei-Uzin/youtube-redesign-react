@@ -13,13 +13,6 @@ import {
   IconTorch,
 } from '../../icons'
 
-import BelleBriggs from './subscriptions/BelleBriggs.png'
-import EmmaHanson from './subscriptions/EmmaHanson.png'
-import EuniceCortez from './subscriptions/EuniceCortez.png'
-import GussieSingleton from './subscriptions/GussieSingleton.png'
-import LeahBerry from './subscriptions/LeahBerry.png'
-import NoraFrancis from './subscriptions/NoraFrancis.png'
-
 export const NAV_ITEMS = [
   {
     id: 'home',
@@ -80,38 +73,5 @@ export const NAV_ITEMS = [
     id: 'settings',
     title: 'Settings',
     icon: IconGear,
-  },
-]
-
-export const SUBSCRIPTIONS = [
-  {
-    id: 'Gussie-Singleton',
-    title: 'Gussie Singleton',
-    icon: GussieSingleton,
-  },
-  {
-    id: 'Nora-Francis',
-    title: 'Nora Francis',
-    icon: NoraFrancis,
-  },
-  {
-    id: 'Belle-Briggs',
-    title: 'Belle Briggs',
-    icon: BelleBriggs,
-  },
-  {
-    id: 'Eunice-Cortez',
-    title: 'Eunice Cortez',
-    icon: EuniceCortez,
-  },
-  {
-    id: 'Emma-Hanson',
-    title: 'Emma Hanson',
-    icon: EmmaHanson,
-  },
-  {
-    id: 'Leah-Berry',
-    title: 'Leah Berry',
-    icon: LeahBerry,
   },
 ]
