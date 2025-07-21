@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.profile-item__button {
+  color: var(--primary-gray);
+}
+
 .profile-item[data-visible='false'] {
   display: none;
 }
@@ -21,7 +25,6 @@
   top: -6px;
   text-align: center;
   font-weight: 700;
-  line-height: 1.4;
   border-radius: 50%;
   background-color: var(--alert);
   color: var(--white);

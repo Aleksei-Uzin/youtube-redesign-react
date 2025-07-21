@@ -26,7 +26,7 @@ export const ProfileSection = () => {
         data-visible={visibility[ind]}
         key={id}
       >
-        <Button>
+        <Button className={styles['profile-item__button']}>
           {!icon ? (
             <img
               src={Avatar}
