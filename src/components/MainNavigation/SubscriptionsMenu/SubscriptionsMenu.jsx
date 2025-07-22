@@ -17,7 +17,7 @@ export const SubscriptionsMenu = ({ buttonClassName, itemClassName }) => {
     <Menu
       boxClassName={styles['subscriptions-box']}
       header="Subscriptions"
-      headerClassName={styles['subscriptions-header']}
+      headerClassName={styles['subscriptions-box__header']}
     >
       {items}
     </Menu>

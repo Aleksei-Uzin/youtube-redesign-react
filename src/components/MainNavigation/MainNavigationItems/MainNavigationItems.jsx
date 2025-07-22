@@ -1,12 +1,14 @@
 import { createElement } from 'react'
 import classNames from 'classnames'
-import { Button } from '../Button'
-import { Menu } from '../Menu'
-import { SubscriptionsMenu } from './SubscriptionsMenu'
+import { Button } from '../../Button'
+import { Menu } from '../../Menu'
+import { SubscriptionsMenu } from '../SubscriptionsMenu'
+import { useMedia } from '../../../hooks'
 import { NAV_ITEMS } from './content'
-import styles from './mainNavigation.module.css'
+import styles from './mainNavigationItems.module.css'
 
-export const NavItems = () => {
+export const MainNavigationItems = () => {
+  const isMatchMedia = useMedia('(max-width: 660px)')
   const len = NAV_ITEMS.length
   const items = []
 
@@ -15,7 +17,7 @@ export const NavItems = () => {
     const isLastItem = items.length === len - 1
     let element = null
 
-    if (isLastItem) {
+    if (isLastItem && !isMatchMedia) {
       element = (
         <SubscriptionsMenu
           buttonClassName={styles['main-navigation-box__btn']}

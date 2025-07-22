@@ -1,19 +1,22 @@
 import classNames from 'classnames'
+import { MainNavigationItems } from './MainNavigationItems'
 import { Menu } from '../Menu'
-import { NavItems } from './NavItems'
 import { useHeaderMenuButton } from '../HeaderMenuButton'
 import styles from './mainNavigation.module.css'
 
 export const MainNavigation = () => {
   const [state] = useHeaderMenuButton()
-  const finalClassNames = classNames({
+  const boxClassName = classNames(styles['main-navigation-box'], {
     [styles['main-navigation-box_hidden']]: state,
   })
 
   return (
     <nav>
-      <Menu boxClassName={finalClassNames}>
-        <NavItems />
+      <Menu
+        boxClassName={boxClassName}
+        menuClassName={styles['main-navigation-menu']}
+      >
+        <MainNavigationItems />
       </Menu>
     </nav>
   )

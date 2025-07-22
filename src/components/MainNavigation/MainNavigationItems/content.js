@@ -11,7 +11,7 @@ import {
   IconMusic,
   IconStar,
   IconTorch,
-} from '../../icons'
+} from '../../../icons'
 
 export const NAV_ITEMS = [
   {
