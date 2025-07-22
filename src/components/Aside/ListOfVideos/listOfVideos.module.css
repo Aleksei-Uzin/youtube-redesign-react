@@ -1,0 +1,56 @@
+.recommended-video-item {
+  padding-bottom: 23px;
+}
+
+.recommended-video-item__figure {
+  position: relative;
+}
+
+.recommended-video-item__figcaption {
+  padding: 10px 0 16px 0;
+  font-size: 26px;
+}
+
+.recommended-video-item__duration {
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  padding: 4px 10px;
+  font-size: 14px;
+  background-color: var(--black);
+  border-radius: 12px;
+  color: var(--white);
+  opacity: 0.3;
+}
+
+.recommended-video-item__footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: var(--light-gray-secondary);
+}
+
+@media (max-width: 992px) {
+  .recommended-video-item {
+    padding-bottom: 30px;
+    max-width: fit-content;
+  }
+
+  .recommended-video-item__figure img {
+    width: 288px;
+    height: 150px;
+  }
+
+  .recommended-video-item__figcaption {
+    padding: 6px 0 4px 0;
+    font-size: 16px;
+  }
+
+  .recommended-video-item__footer {
+    font-size: 13px;
+  }
+
+  .recommended-video-item__duration {
+    bottom: 43px;
+  }
+}

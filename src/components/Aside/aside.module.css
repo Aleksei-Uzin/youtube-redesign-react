@@ -1,0 +1,28 @@
+.asside-box {
+  padding-top: 13px;
+}
+
+.aside-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26px;
+}
+
+.aside-header__h2 {
+  font-size: 36px;
+}
+
+@media (max-width: 992px) {
+  .asside-box {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  .aside-header {
+    padding-bottom: 13px;
+  }
+
+  .aside-header__h2 {
+    font-size: 20px;
+  }
+}
