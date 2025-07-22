@@ -1,22 +1,16 @@
-import { createElement, useEffect, useState } from 'react'
+import { createElement } from 'react'
 import { Menu } from '../../Menu'
 import { Button } from '../../Button'
 import { CONTENT } from './content'
-import { useMedia } from '../../../hooks/useMedia'
+import { useMedia } from '../../../hooks'
 import Avatar from './assets/profile-photo.png'
 import styles from './profileSection.module.css'
 
 export const ProfileSection = () => {
-  const [visibility, setVisibility] = useState(() =>
-    CONTENT.map(({ visible }) => visible)
-  )
   const isMatchMedia = useMedia('(max-width: 660px)')
-
-  useEffect(() => {
-    if (isMatchMedia) {
-      setVisibility(prev => prev.map(val => !val))
-    }
-  }, [isMatchMedia])
+  const visibility = CONTENT.map(({ visible }) =>
+    isMatchMedia ? !visible : visible
+  )
 
   const listItems = CONTENT.map(({ id, icon, notifications = [] }, ind) => {
     const len = notifications.length
