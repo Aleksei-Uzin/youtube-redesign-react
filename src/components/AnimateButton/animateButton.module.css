@@ -1,0 +1,69 @@
+.animate-button-box {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.animate-button__checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.animate-button__label {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black-secondary);
+  cursor: pointer;
+}
+
+.animate-button__checkbox {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 28px;
+  background-color: var(--light-gray);
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.animate-button__checkbox::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: 200ms ease-out alternate forwards;
+}
+
+.animate-button__checkbox_on::after {
+  animation-name: animate-btn-on;
+}
+
+.animate-button__checkbox_off::after {
+  animation-name: animate-btn-off;
+}
+
+@keyframes animate-btn-on {
+  from {
+    transform: translateX(0);
+    background-color: var(--alert);
+  }
+  to {
+    transform: translateX(100%);
+    background-color: var(--blue);
+  }
+}
+
+@keyframes animate-btn-off {
+  from {
+    transform: translateX(100%);
+    background-color: var(--blue);
+  }
+  to {
+    transform: translateX(0);
+    background-color: var(--alert);
+  }
+}
