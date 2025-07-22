@@ -1,7 +1,14 @@
+import { ContentBox, Header, HeaderMenuButtonProvider } from './components'
 import './index.css'
+import './variables.css'
 
 function App() {
-  return <h1>Font Test - Google Mulish</h1>
+  return (
+    <HeaderMenuButtonProvider>
+      <Header />
+      <ContentBox />
+    </HeaderMenuButtonProvider>
+  )
 }
 
 export default App
