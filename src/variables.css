@@ -2,17 +2,12 @@
   /* color scheme */
   --black: #000000;
   --black-secondary: #19202c;
+  --blue: #2196f3;
   --primary-gray: #898989;
+  --gray-blue: #192646;
   --dark-gray: #30384c;
   --light-gray: #ebebeb;
   --light-gray-secondary: #c2c2c2;
   --alert: #ff0000;
   --white: #ffffff;
-
-  /* Indents */
-  --indent-10: 10px;
-  --indent-20: 20px;
-  --indent-30: 30px;
-  --indent-60: 60px;
-  --indent-70: 70px;
 }
