@@ -7,8 +7,10 @@ export const ContentBox = () => {
   return (
     <div className={styles['content-box']}>
       <MainNavigation />
-      <MainContent />
-      <Aside />
+      <div className={styles['content-box__content']}>
+        <MainContent />
+        <Aside />
+      </div>
     </div>
   )
 }

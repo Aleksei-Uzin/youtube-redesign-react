@@ -1,11 +1,20 @@
 .content-box {
   display: flex;
-  padding: 0 70px 40px 30px;
+  padding: 0 35px 40px 15px;
+}
+
+.content-box__content {
+  display: flex;
+  padding-right: 35px;
 }
 
 @media (max-width: 992px) {
   .content-box {
-    flex-direction: column;
     padding: 0 0 40px 0;
+  }
+
+  .content-box__content {
+    flex-direction: column;
+    padding-right: 0;
   }
 }

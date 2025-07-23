@@ -30,7 +30,7 @@
   color: var(--light-gray-secondary);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .recommended-video-item {
     padding-bottom: 30px;
     max-width: fit-content;

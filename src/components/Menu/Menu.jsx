@@ -1,4 +1,5 @@
-import './menu.module.css'
+import classNames from 'classnames'
+import styles from './menu.module.css'
 
 export const Menu = ({
   children,
@@ -8,10 +9,12 @@ export const Menu = ({
   menuClassName,
   ...rest
 }) => {
+  const finalMenuClassName = classNames(styles['menu-reset'], menuClassName)
+
   return (
     <div className={boxClassName}>
       {header ? <h2 className={headerClassName}>{header}</h2> : null}
-      <ul className={menuClassName} {...rest}>
+      <ul className={finalMenuClassName} {...rest}>
         {children}
       </ul>
     </div>

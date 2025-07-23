@@ -1,9 +1,16 @@
 .main-content-box {
-  padding: 10px 40px 10px 50px;
+  padding: 10px 40px 10px 65px;
 }
 
 @media (max-width: 992px) {
   .main-content-box {
     padding: 0;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  .main-content-box {
+    border-bottom: 1px solid var(--primary-gray);
   }
 }
