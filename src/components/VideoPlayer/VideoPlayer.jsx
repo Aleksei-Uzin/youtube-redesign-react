@@ -9,13 +9,15 @@ export const VideoPlayer = () => {
   const isMatchMedia = useMedia('(max-width: 992px)')
 
   return (
-    <figure id="videoContainer" data-fullscreen="false">
-      <video
-        id="video"
-        className={styles['video-player']}
-        poster={Poster}
-      ></video>
-      <VideoPlayerControls />
+    <figure id="video-container" data-fullscreen="false">
+      <div className={styles['video-player__box']}>
+        <video
+          id="video"
+          className={styles['video-player']}
+          poster={Poster}
+        ></video>
+        <VideoPlayerControls />
+      </div>
       <figcaption className={styles['video-player__figcaption']}>
         Dude You Re Getting A Telescope
         {isMatchMedia ? (

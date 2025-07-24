@@ -1,39 +1,9 @@
-;<ul id="video-controls" className="controls">
-  <li>
-    <button id="playpause" type="button">
-      Play/Pause
-    </button>
-  </li>
-  <li>
-    <button id="stop" type="button">
-      Stop
-    </button>
-  </li>
-  <li className="progress">
-    <progress id="progress" value="0" min="0">
-      <span id="progress-bar"></span>
-    </progress>
-  </li>
-  <li>
-    <button id="mute" type="button">
-      Mute/Unmute
-    </button>
-  </li>
-  <li>
-    <button id="volinc" type="button">
-      Vol+
-    </button>
-  </li>
-  <li>
-    <button id="voldec" type="button">
-      Vol-
-    </button>
-  </li>
-  <li>
-    <button id="fs" type="button">
-      Fullscreen
-    </button>
-  </li>
-</ul>
+import { PlayerControlsDesktop } from '../PlayerControlsDesktop'
+import { PlayerControlsMobile } from '../PlayerControlsMobile'
+import { useMedia } from '../../../hooks'
 
-export const VideoPlayerControls = () => {}
+export const VideoPlayerControls = () => {
+  const isMatchMedia = useMedia('(max-width: 660px)')
+
+  return isMatchMedia ? <PlayerControlsMobile /> : <PlayerControlsDesktop />
+}

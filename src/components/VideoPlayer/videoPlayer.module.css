@@ -1,6 +1,11 @@
 .video-player {
   width: 100%;
 }
+
+.video-player__box {
+  position: relative;
+}
+
 .video-player__figcaption {
   padding-top: 20px;
   font-size: 36px;

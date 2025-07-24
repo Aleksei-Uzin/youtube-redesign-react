@@ -1,0 +1,49 @@
+.player-controls-desktop {
+  position: absolute;
+  bottom: 30px;
+  left: 33px;
+  right: 33px;
+}
+
+.player-controls-desktop__duration {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--white);
+}
+
+.player-controls-desktop__settings {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 16px;
+}
+
+.player-controls-desktop__left,
+.player-controls-desktop__right {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.player-controls-desktop__left {
+  gap: 40px;
+}
+
+.player-controls-desktop__right {
+  gap: 25px;
+  padding-right: 8px;
+}
+
+.player-controls-desktop__volume {
+  display: flex;
+  align-items: center;
+  width: 125px;
+  gap: 20px;
+}
+
+.player-controls-desktop__volume input {
+  height: 8px;
+}
