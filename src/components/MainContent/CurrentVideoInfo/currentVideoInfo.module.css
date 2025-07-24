@@ -55,7 +55,6 @@
   }
 
   .current-video__menu {
-    max-width: 300px;
     padding-top: 10px;
     padding-right: 20px;
     overflow-x: scroll;

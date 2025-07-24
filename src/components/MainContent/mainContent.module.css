@@ -1,5 +1,6 @@
 .main-content-box {
   padding: 10px 40px 10px 65px;
+  max-width: 100vw;
 }
 
 @media (max-width: 992px) {
